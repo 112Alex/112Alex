@@ -31,5 +31,5 @@
 ---
 
 <div align="center">
-  ![](https://github-readme-streak-stats.herokuapp.com/?user=112Alex&theme=transparent&hide_border=false)
+  ![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=112Alex&theme=transparent&hide_border=false)
 </div>
