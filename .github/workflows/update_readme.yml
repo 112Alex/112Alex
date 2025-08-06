@@ -15,24 +15,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Generate GitHub stats
-        uses: anuraghazra/github-readme-stats@master
-        with:
-          username: 112Alex
-          theme: transparent
-          hide_border: false
-          include_all_commits: false
-          count_private: true
-          layout: compact
-      
-      - name: Generate GitHub streak stats
-        uses: DenverCoder1/github-readme-streak-stats@v2
-        with:
-          user: 112Alex
-          theme: transparent
-          hide_border: false
-
-      - name: Generate Top Languages
+      - name: Generate GitHub stats and Top Languages
         uses: anuraghazra/github-readme-stats@master
         with:
           username: 112Alex
@@ -43,7 +26,7 @@ jobs:
           layout: compact
           
       - name: Commit and push changes
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: stefanzweifel/git-auto-commit-action@v6
         with:
           commit_message: "chore: update github stats"
           branch: main # Или master, если у вас так называется основная ветка
