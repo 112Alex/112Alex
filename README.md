@@ -31,5 +31,5 @@
 ---
 
 <div align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=112Alex&theme=github_dark" alt="GitHub Profile Summary" />
+  ![](https://streak-stats.demolab.com/?user=112Alex&theme=transparent&hide_border=false&date=2025-08-06)
 </div>
