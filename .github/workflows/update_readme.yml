@@ -10,7 +10,7 @@ jobs:
     name: Update GitHub Stats
     runs-on: ubuntu-latest
     permissions:
-      contents: write # Важно: это разрешение позволяет Action коммитить изменения
+      contents: write # Это разрешение необходимо, чтобы Action мог записывать изменения в репозиторий
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -24,14 +24,14 @@ jobs:
           include_all_commits: false
           count_private: true
           layout: compact
-          
-      - name: Generate GitHub streak
-        uses: Denis-Kolodin/github-readme-streak-stats@v1
+      
+      - name: Generate GitHub streak stats
+        uses: DenverCoder1/github-readme-streak-stats@v2
         with:
           user: 112Alex
           theme: transparent
           hide_border: false
-      
+
       - name: Generate Top Languages
         uses: anuraghazra/github-readme-stats@master
         with:
@@ -43,7 +43,7 @@ jobs:
           layout: compact
           
       - name: Commit and push changes
-        uses: stefanzweck/git-auto-commit-action@v5
+        uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: update github stats"
           branch: main # Или master, если у вас так называется основная ветка
