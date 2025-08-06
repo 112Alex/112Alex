@@ -8,3 +8,5 @@
 ![](https://github-readme-stats.vercel.app/api?username=112Alex&theme=transparent&hide_border=false&include_all_commits=false&count_private=true)<br/>
 ![](https://nirzak-streak-stats.vercel.app/?user=112Alex&theme=transparent&hide_border=false)<br/>
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=112Alex&theme=transparent&hide_border=false&include_all_commits=false&count_private=true&layout=compact)
+
+![Stats](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=112Alex&theme=github_dark)
