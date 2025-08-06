@@ -31,5 +31,5 @@
 ---
 
 <div align="center">
-  ![](https://streak-stats.demolab.com/?user=112Alex&theme=transparent&hide_border=false&date=2025-08-06)
+  ![](https://github-readme-streak-stats.herokuapp.com/?user=112Alex&theme=transparent&hide_border=false)
 </div>
