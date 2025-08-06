@@ -1,32 +1,22 @@
-name: Update README Stats
+name: Auto Commit README
 
 on:
-  schedule:
-    - cron: '0 0 * * *' # Запуск каждый день в полночь UTC
+  push:
+    branches:
+      - main
   workflow_dispatch:
 
 jobs:
-  update-readme:
-    name: Update GitHub Stats
+  auto-commit:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # Это разрешение необходимо, чтобы Action мог записывать изменения в репозиторий
+      contents: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Generate GitHub stats and Top Languages
-        uses: anuraghazra/github-readme-stats@master
-        with:
-          username: 112Alex
-          theme: transparent
-          hide_border: false
-          include_all_commits: false
-          count_private: true
-          layout: compact
-          
-      - name: Commit and push changes
+      - name: Auto-commit changes
         uses: stefanzweifel/git-auto-commit-action@v6
         with:
-          commit_message: "chore: update github stats"
-          branch: main # Или master, если у вас так называется основная ветка
+          commit_message: "chore: update README.md"
+          file_pattern: "README.md"
