@@ -9,11 +9,13 @@ jobs:
   update-readme:
     name: Update GitHub Stats
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # Важно: это разрешение позволяет Action коммитить изменения
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      - name: Update GitHub stats
+      - name: Generate GitHub stats
         uses: anuraghazra/github-readme-stats@master
         with:
           username: 112Alex
@@ -23,14 +25,14 @@ jobs:
           count_private: true
           layout: compact
           
-      - name: Update GitHub streak
-        uses: nirzak/github-readme-streak-stats@master
+      - name: Generate GitHub streak
+        uses: Denis-Kolodin/github-readme-streak-stats@v1
         with:
           user: 112Alex
           theme: transparent
           hide_border: false
-
-      - name: Update Top Languages
+      
+      - name: Generate Top Languages
         uses: anuraghazra/github-readme-stats@master
         with:
           username: 112Alex
@@ -39,8 +41,8 @@ jobs:
           include_all_commits: false
           count_private: true
           layout: compact
-
-      - name: Commit and push
+          
+      - name: Commit and push changes
         uses: stefanzweck/git-auto-commit-action@v5
         with:
           commit_message: "chore: update github stats"
