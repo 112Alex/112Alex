@@ -1,7 +1,3 @@
-<div align="center">
-  <img src="https://github.com/112Alex/112Alex/blob/main/media/readme_header.png?raw=true" alt="README Header"/>
-</div>
-
 ### 💫 Обо мне:
 ⚡️ Golang-разработчик
 
